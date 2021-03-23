@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Style 1.css" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>The Dark Descent</title>
+    
+    </head>
+
+    <body>
+        <span class='choice_button'><a href="Beginning.html">Start</a></span>
+        <span class='choice_button' onclick="save()"><a href="">Load</a></span>
+    
+        <button type="button" onclick="displayCookies()">Display All Cookies</button>
+    
+        <!-- set cookies for save function UNFINISHED -->
+        <script>
+            var currentUrl = window.location.href;
+            
+            function save(){
+                document.cookie =  currentUrl;
+                var x = document.cookie;
+                alert(x);
+
+
+            }
+        </script>
+    </body>
+
+
+</html>
