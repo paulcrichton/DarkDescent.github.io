@@ -1,0 +1,118 @@
+/* Header */
+.item1 { grid-area: header;
+        background-color:#212529;
+        text-align: left;
+        color: lightgray;}
+
+/* left side */
+.item2 { grid-area: left;
+        background-color:#212529;}
+
+/* middle "main" area */
+.item3 { grid-area: main;
+        width: inherit;
+        font-family: Monaco;
+        height: 500px;
+        border: 5px solid lightgray;
+        box-sizing: border-box;
+        border-width: 5px;
+        background-origin: border-box;
+        background-image: url("Background 1.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        color: #CED4DA;}
+
+/* right side */
+.item4 { grid-area: right;
+        background-color:#212529;
+      align-items: flex-start;}
+
+/* Bottom/footer */
+.item5 { grid-area: choice;
+        background-color:#212529;
+        color: lightgray}
+
+
+.item6 { grid-area: empty_left;
+        background-color:#212529;}
+.item6 { grid-area: empty_right;
+          background-color:#212529;}
+
+/* alignment using flexbox */
+.gameboy{
+  display: grid;
+  grid-template-areas: 
+  'empty_right empty_right header header header empty_left empty_left'
+  'left left main main main right right'
+  'left left choice choice choice right right' ;
+  grid-gap: 10px;
+  background-color: #212529;
+  padding: 10px;
+
+}
+
+/* global div */
+.gameboy > div {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+
+
+a:link, a:visited {
+  color:gray;
+  text-decoration: none;
+  }
+
+/* Graphical line seperator */
+line {
+    border-top: 1px solid lightgray;
+  }
+
+body {
+    background-color: #212529;
+}
+
+
+/* Buttons */
+.choice_button{
+        align-self: center;
+        text-align: center;
+            display: inline-block;
+            margin:5px;
+        font-weight: bold;
+        padding: 10px 30px 10px ;
+        text-decoration: lightgrey;
+        background-color: lightgray;
+        text-shadow: -1px -1px black, 1px 1px white;
+        color: gray;
+        -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -o-border-radius: 7px;
+            border-radius: 7px;
+        box-shadow: 0 .2em gray; 
+        cursor: pointer;
+    
+    }
+        /* Edited and inspired from https://codepen.io/DanielWeiner/pen/iFadn 15/03/2021 */
+
+/* side buttons */
+.managment_button{
+        align-self: center;
+        text-align: center;
+            display: inline-block;
+            margin:5px;
+        font-weight: bold;
+        padding: 5px 5px 5px ;
+        text-decoration: lightgrey;
+        background-color: lightgray;
+        text-shadow: -1px -1px black, 1px 1px white;
+        color: gray;
+        -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -o-border-radius: 7px;
+            border-radius: 7px;
+        box-shadow: 0 .2em gray; 
+        cursor: pointer;
+
+}
