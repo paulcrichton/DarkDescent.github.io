@@ -1,6 +1,7 @@
 function save(){
     document.cookie =  currentUrl;
     var x = document.cookie;
+    alert("Saved!")
 }
 
 
