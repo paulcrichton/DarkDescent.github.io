@@ -3,15 +3,15 @@ function save(){
     d.setTime(d.getTime() + (365*24*60*60*1000));
     var expires = "expires="+ d.toUTCString();
     var pagelocation = window.location.href;
-    document.cookie = "save" + pagelocation + ";" + expires;
-    alert(document.cookie)
+    document.cookie = "save" + "=" + pagelocation + ";" + expires;
+    alert(document.cookie);
 
 }
 
 
 function load(){    
     var x = getCookie("save");
-    alert(x);
+    window.location.href = x
 
 }
 
@@ -29,6 +29,6 @@ function getCookie(cname) {
         return c.substring(name.length, c.length);
       }
     }
-    alert("not working")
+    alert("not working");
     return "";
   }
