@@ -8,6 +8,6 @@ function save(){
 function load(){    
         var x = document.cookie;
         window.location.href = x;
-        alert("yes!")
+
 
 }
