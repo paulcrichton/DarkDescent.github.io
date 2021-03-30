@@ -10,8 +10,8 @@ function save(){
 
 
 function load(){    
-    var x = getCookie("save")
-    alert(x)
+    var x = getCookie("save");
+    alert(x);
 
 }
 
