@@ -1,15 +1,13 @@
 function save(){
-    document.cookie =  currentUrl;
+    document.cookie =  window.location.href;
     var x = document.cookie;
     alert("Saved!")
 }
 
 
 function load(){    
-    try{
         var x = document.cookie;
         window.location.href = x;
-    }catch{
-        alert(X)
-    }
+        alert("yes!")
+
 }
